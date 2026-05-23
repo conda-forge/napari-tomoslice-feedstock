@@ -1,13 +1,13 @@
 {% set name = "napari-tomoslice" %}
-{% set version = "0.0.7" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-tomoslice-{{ version }}.tar.gz
-  sha256: 3c8bc659df18e4eaebb975a3a85714ee087c78569fc1bc3bc3c44e399f878bcc
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c02635e1801758c25a80ec10a4357c4af3f7f65ea3cd5f7e59511193f64f5b2b
 
 build:
   entry_points:
